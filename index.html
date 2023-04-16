@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .daily-whisper {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="daily-whisper-container">
+    <div class="daily-whisper">Whisper of the day: Embrace each day as a new opportunity to grow and learn.</div>
+  <div class="daily-whisper">Whisper of the day: Believe in your inner strength; it's a powerful force that can propel you forward.</div>
+  <div class="daily-whisper">Whisper of the day: Transform your challenges into fuel for your success.</div>
+  <div class="daily-whisper">Whisper of the day: Find joy in the journey, even when the path is steep.</div>
+  <div class="daily-whisper">Whisper of the day: Small actions add up to big achievements.</div>
+  <div class="daily-whisper">Whisper of the day: Surround yourself with people who lift you higher.</div>
+  <div class="daily-whisper">Whisper of the day: Be kind to yourself; you're doing the best you can with what you have.</div>
+  <div class="daily-whisper">Whisper of the day: Trust your instincts and follow your passion.</div>
+  <div class="daily-whisper">Whisper of the day: Appreciate the beauty in each moment.</div>
+  <div class="daily-whisper">Whisper of the day: Dream boldly and act decisively.</div>
+  <div class="daily-whisper">Whisper of the day: Never underestimate the power of a positive mindset.</div>
+  <div class="daily-whisper">Whisper of the day: The only limits in life are the ones we impose on ourselves.</div>
+  <div class="daily-whisper">Whisper of the day: Celebrate your victories, no matter how small.</div>
+  <div class="daily-whisper">Whisper of the day: Learn from your setbacks; they're valuable lessons for future success.</div>
+  <div class="daily-whisper">Whisper of the day: Be the change you wish to see in the world.</div>
+  <div class="daily-whisper">Whisper of the day: It's not about being the best; it's about being better than you were yesterday.</div>
+  <div class="daily-whisper">Whisper of the day: Embrace change, for it brings growth and new possibilities.</div>
+  <div class="daily-whisper">Whisper of the day: Keep pushing forward, even when the path is uncertain.</div>
+  <div class="daily-whisper">Whisper of the day: Invest in yourself; you're worth it.</div>
+  <div class="daily-whisper">Whisper of the day: Find the courage to take risks and pursue your dreams.</div>
+  <div class="daily-whisper">Whisper of the day: Your past does not define you; it's a stepping stone to your future.</div>
+  <div class="daily-whisper">Whisper of the day: Hold onto hope; it's a powerful ally in challenging times.</div>
+  <div class="daily-whisper">Whisper of the day: Make your mark on the world and leave a lasting legacy.</div>
+  <div class="daily-whisper">Whisper of the day: You may encounter many defeats, but you must not be defeated.</div>
+  <div class="daily-whisper">Whisper of the day: Cherish your relationships, for they are the foundation of a fulfilling life.</div>
+  </div>
+  <script>
+    function showDailyWhisper() {
+      var today = new Date();
+      var dayOfMonth = today.getDate();
+      var whispers = document.getElementsByClassName('daily-whisper');
+      for (var i = 0; i < whispers.length; i++) {
+        whispers[i].style.display = (i + 1 === dayOfMonth) ? 'block' : 'none';
+      }
+    }
+    showDailyWhisper();
+  </script>
+</body>
+</html>
